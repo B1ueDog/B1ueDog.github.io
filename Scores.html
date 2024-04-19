@@ -3,59 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Interface</title>
+    <title>Football Scores</title>
     <style>
-        /* CSS styles can be added here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
         }
-        input[type="text"], textarea {
+        table {
             width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
             padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
         }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Simple Web Interface</h1>
-        <form id="myForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <h1>Football Scores</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Home Team</th>
+                <th>Away Team</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>April 18, 2024</td>
+                <td>Team A</td>
+                <td>Team B</td>
+                <td>3 - 2</td>
+            </tr>
+            <tr>
+                <td>April 17, 2024</td>
+                <td>Team C</td>
+                <td>Team D</td>
+                <td>1 - 1</td>
+            </tr>
+            <!-- Add more rows for additional games -->
+        </tbody>
+    </table>
 </body>
 </html>
